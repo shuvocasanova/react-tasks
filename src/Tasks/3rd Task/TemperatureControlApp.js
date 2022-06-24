@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Temperature.css";
+import styles from "./Temperature.module.css";
 
 const TemperatureControlApp = () => {
   const [value, setValue] = useState(0);
@@ -22,9 +22,9 @@ const TemperatureControlApp = () => {
     
   };
   return (
-    <div className="app-container">
-      <div className="temperature-display-container ">
-        <div className={`temperature-display ${temperatureColor}`}>{value}</div>
+    <div className={styles.appcontainer}>
+      <div className={styles.temperaturedisplaycontainer}>
+        <div className={`styles.temperaturedisplay ${temperatureColor}`}>{value}</div>
       </div>
       <div className="button-container">
         <button className="button" onClick={increment}>
