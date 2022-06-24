@@ -3,12 +3,14 @@ import './App.css';
 import { useState } from 'react';
 import SimpleCounter from './Tasks/SimpleCounter';
 import TemperatureControlApp from './Tasks/TemperatureControlApp';
+import SearchFilter from './Tasks/4th Task/SearchFilter';
 
 function App() {
   return (
     <div >
       {/* // <SimpleCounter /> */}
-      <TemperatureControlApp />
+      {/* <TemperatureControlApp /> */}
+      <SearchFilter/>
     </div>
   );
 }
